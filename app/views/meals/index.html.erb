@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Meals</h1>
+
+<div class="container">
+  <div class="row">
+    <% @meals.each do |meal| %>
+      <div class="col-md-4">
+        <div class="card mb-4" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title"><%= meal.meal %></h5>
+            <p class="card-text"><%= meal.date %></p>
+            <%= link_to "Show this meal", meal, class: "btn btn-secondary" %>
+            <%= link_to "Edit", edit_meal_path(meal), class: "btn btn-primary" %>
+            <%= button_to "Destroy", meal, method: :delete, class: "btn btn-danger", data: { confirm: "Are you sure?" } %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to "New meal", new_meal_path, class: "btn btn-success" %>
