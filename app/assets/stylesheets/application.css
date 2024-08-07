@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+ h1 {
+    align-items: normal;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: rgb(130, 33, 33);
+    text-decoration-thickness: 2px;
+}
+
+
+.hello{
+    color: rgb(27, 34, 238);
+    font-size: 50px;
+    text-align: center;
+}

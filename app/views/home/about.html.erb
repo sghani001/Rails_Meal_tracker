@@ -1,3 +1,6 @@
+<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload'%>
+
+
 <div class="container mt-5">
   <div class="row">
     <div class="col-md-12 text-center">
@@ -5,6 +8,14 @@
       <p class="lead mt-4">Meal Tracker is designed to help you easily manage your meals and maintain a healthy lifestyle. Our platform provides an intuitive interface for recording and tracking your meals, setting dietary goals, and analyzing your eating habits. Whether you are aiming for weight loss, muscle gain, or just a balanced diet, Meal Tracker offers the features you need to stay on track and achieve your nutritional goals.</p>
       <p class="mt-4">Our mission is to empower users with the tools to make informed dietary choices and support their journey towards a healthier lifestyle. Explore the features, manage your meals, and join a community focused on wellness and nutrition.</p>
       <a href="<%= root_path %>" class="btn btn-secondary btn-lg mt-3">Back to Home</a>
+      <br>
+      <br>
+      <button id="check-button" class='btn btn-secondary'>
+        click me to check
+      </button>
+      <h4 id="hello">
+        Hello how are u?
+      </h4>
     </div>
   </div>
 </div>

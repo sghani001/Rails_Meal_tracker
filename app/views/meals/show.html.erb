@@ -1,6 +1,5 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @meal %>
 
 <div class="card" style="width: 18rem;">
   <div class="card-body">
@@ -10,6 +9,7 @@
     <%= button_to "Destroy", @meal,  class: "btn btn-danger", data: {turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
   </div>
 </div>
+
 
 <div>
   <%= link_to "Back to meals", meals_path, class: "btn btn-dark" %>
